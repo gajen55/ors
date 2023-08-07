@@ -23,14 +23,6 @@ def main():
         else:
             st.write('No matching names found.')
             
-        if st.button("Submit"):
-            st.success(f"Selected Name: {selected_name}")
-            df = pd.DataFrame({'Selected Name': [selected_name]})
-            st.write('Response recorded!')
-            
-            # Append the DataFrame to an Excel file
-            #with pd.ExcelWriter('responses.xlsx', mode='a', engine='openpyxl') as writer:
-                #df.to_excel(writer, sheet_name='Responses', index=False, header=not writer.sheets['Responses'])
      
 if __name__ == "__main__":
     main()
