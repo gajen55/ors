@@ -1,7 +1,7 @@
 import streamlit as st
 
 # List of names in the backend
-NameList = ['Rohan', 'Roshan', 'Ankit', 'Anusha']
+NameList = ['', 'Rohan', 'Roshan', 'Ankit', 'Anusha']
 if 'clicked' not in st.session_state:
     st.session_state.clicked = False
 
